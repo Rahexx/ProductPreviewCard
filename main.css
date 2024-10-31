@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #f2ebe3; }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 613px;
+  width: 337px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  font-family: 'Montserrat', serif;
+  transform: translate(-50%, -50%);
+  overflow: hidden; }
+  .modal .header {
+    height: 236px;
+    width: 100%; }
+    .modal .header_image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .modal .info {
+    width: 87%;
+    margin: 20px auto 0; }
+    .modal .info_category {
+      margin-bottom: 12px;
+      font-size: 0.75rem;
+      color: #6c7289;
+      letter-spacing: 4px;
+      text-transform: uppercase; }
+    .modal .info_title {
+      color: #1c232b;
+      font-size: 2rem;
+      font-family: 'Fraunces', serif;
+      font-weight: 700; }
+    .modal .info_description {
+      margin: 20px auto 28px;
+      color: #6c7289;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 21px; }
+    .modal .info_prices {
+      display: flex;
+      align-items: center; }
+      .modal .info_prices_discount {
+        margin-right: 20px;
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #3c8067; }
+      .modal .info_prices_main {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #6c7289;
+        text-decoration: line-through; }
+    .modal .info_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 100%;
+      margin-top: 20px;
+      border: none;
+      background: #3c8067;
+      font-family: 'Montserrat', serif;
+      font-weight: 700;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.5s; }
+      .modal .info_btn:hover {
+        background-color: #214538; }
+      .modal .info_btn ion-icon {
+        font-size: 20px;
+        margin-right: 12px; }
+
+@media (min-width: 1440px) {
+  .modal {
+    flex-direction: row;
+    height: 460px;
+    width: 610px; }
+    .modal .header {
+      height: 100%;
+      width: 50%; }
+      .modal .header_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .modal .info {
+      width: 50%;
+      margin: 0;
+      padding: 32px 32px 0; }
+      .modal .info_category {
+        margin-bottom: 16px; }
+      .modal .info_description {
+        margin: 24px auto; }
+      .modal .info_btn {
+        margin-top: 28px; } }
+
+/*# sourceMappingURL=main.css.map */

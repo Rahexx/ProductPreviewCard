@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body class="container">
+    <main class="modal">
+      <section class="header">
+        <picture>
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="./images/image-product-mobile.jpg"
+            media="(max-width: 1439px)"
+          />
+          <img
+            class="header_image"
+            src="./images/image-product-mobile.jpg"
+            alt="Gold perfumes from channel and two decorated green branches"
+          />
+        </picture>
+      </section>
+      <section class="info">
+        <p class="info_category">Perfume</p>
+        <h1 class="info_title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="info_description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="info_prices">
+          <p class="info_prices_discount">$149.99</p>
+          <p class="info_prices_main">$169.99</p>
+        </div>
+        <button class="info_btn">
+          <ion-icon name="cart-outline"></ion-icon>Add to Cart
+        </button>
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
