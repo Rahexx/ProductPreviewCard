@@ -23,12 +23,21 @@
   transform: translate(-50%, -50%);
   overflow: hidden; }
   .modal .header {
+    position: relative;
     height: 236px;
     width: 100%; }
     .modal .header_image {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+    .modal .header_overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      pointer-events: none; }
   .modal .info {
     width: 87%;
     margin: 20px auto 0; }
@@ -87,7 +96,7 @@
 @media (min-width: 1440px) {
   .modal {
     flex-direction: row;
-    height: 460px;
+    height: 444px;
     width: 610px; }
     .modal .header {
       height: 100%;
@@ -99,7 +108,7 @@
     .modal .info {
       width: 50%;
       margin: 0;
-      padding: 32px 32px 0; }
+      padding: 32px 36px 0 32px; }
       .modal .info_category {
         margin-bottom: 16px; }
       .modal .info_description {
