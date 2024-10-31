@@ -43,10 +43,14 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - BEM
+- Github Actions
 
 ### What I learned
 
-I learn using rem for font-size. I was always stubborn about this but it is better use rem.
+I am learning to use rem for font sizes. I was always stubborn about this, but it is better to use rem.
+I used GitHub Actions for the first time to install Sass, which allowed me to delete the CSS folder.
+Now I install Sass on the server, compile the Sass files to CSS, and then the server runs the deployment for GitHub Pages.
+I will be using this setup every time, especially when I start using JavaScript and testing.
 
 ### Continued development
 
