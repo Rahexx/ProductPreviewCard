@@ -34,6 +34,7 @@
 }
 .modal .header {
   height: 236px;
+  width: 100%;
 }
 .modal .header_image {
   height: 100%;
@@ -63,6 +64,7 @@
   color: hsl(228, 12%, 48%);
   font-size: 0.875rem;
   font-weight: 500;
+  line-height: 21px;
 }
 .modal .info_prices {
   display: -webkit-box;
@@ -104,8 +106,49 @@
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.modal .info_btn:hover {
+  background-color: hsl(158, 36%, 20%);
 }
 .modal .info_btn ion-icon {
   font-size: 20px;
   margin-right: 12px;
+}
+
+@media (min-width: 1440px) {
+  .modal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 460px;
+    width: 610px;
+  }
+  .modal .header {
+    height: 100%;
+    width: 50%;
+  }
+  .modal .header_image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .modal .info {
+    width: 50%;
+    margin: 0;
+    padding: 32px 32px 0;
+  }
+  .modal .info_category {
+    margin-bottom: 16px;
+  }
+  .modal .info_description {
+    margin: 24px auto;
+  }
+  .modal .info_btn {
+    margin-top: 28px;
+  }
 }/*# sourceMappingURL=main.css.map */
