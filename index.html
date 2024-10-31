@@ -15,11 +15,20 @@
   <body class="container">
     <main>
       <section class="header">
-        <img
-          class="header_image"
-          src="./images/image-product-mobile.jpg"
-          alt="Gold perfumes from channel and two decorates green branches"
-        />
+        <picture>
+          <source
+            srcset="./images/image-product-mobile.jpg"
+            media="(min-width: 300px)"
+          />
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Gold perfumes from channel and two decorates green branches"
+          />
+        </picture>
       </section>
       <section class="info">
         <p class="info_category">Perfume</p>
