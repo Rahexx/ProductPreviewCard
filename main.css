@@ -36,7 +36,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
       pointer-events: none; }
   .modal .info {
     width: 87%;
@@ -51,7 +51,8 @@
       color: #1c232b;
       font-size: 2rem;
       font-family: 'Fraunces', serif;
-      font-weight: 700; }
+      font-weight: 700;
+      line-height: 32px; }
     .modal .info_description {
       margin: 20px auto 28px;
       color: #6c7289;
