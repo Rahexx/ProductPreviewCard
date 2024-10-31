@@ -3,4 +3,109 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: hsl(30, 38%, 92%);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 613px;
+  width: 337px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  font-family: "Montserrat", serif;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.modal .header {
+  height: 236px;
+}
+.modal .header_image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal .info {
+  width: 87%;
+  margin: 20px auto 0;
+}
+.modal .info_category {
+  margin-bottom: 12px;
+  font-size: 0.75rem;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.modal .info_title {
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+.modal .info_description {
+  margin: 20px auto 28px;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.modal .info_prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal .info_prices_discount {
+  margin-right: 20px;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.modal .info_prices_main {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.modal .info_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  background: hsl(158, 36%, 37%);
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+}
+.modal .info_btn ion-icon {
+  font-size: 20px;
+  margin-right: 12px;
 }/*# sourceMappingURL=main.css.map */
